@@ -1,0 +1,40 @@
+@import "src/colors.scss";
+
+.PeopleCard {
+  position: relative;
+  width: 288px;
+  height: 438px;
+  background: #ffffff;
+  border-radius: 144px 144px 0 0;
+  overflow: hidden;
+  margin: 16px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  fontFamily: "Manrope", sans-serif;
+  margin-bottom: 32px;
+  &__imageContainer {
+    min-height: 252px;
+    overflow: hidden;
+  }
+  &__descriptionContainer {
+    color: $black;
+    fontSize: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    fontWeight: 400;
+    width: 80%;
+  }
+  &__name {
+    fontSize: 20px;
+    fontWeight: 500;
+    text-transform: capitalize;
+  }
+  &__position {
+    text-transform: capitalize;
+    fontSize: 20px;
+    fontWeight: bold;
+    color: $primary;
+  }
+}
